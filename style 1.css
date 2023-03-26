@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 960px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(240, 248, 211, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    z-index: 1;
+    color: rgb(78, 112, 69);
+    font-family: 微软雅黑;
+}
+
+.header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.spacer{
+    width: 12%;
+}
+
+.spacer1{
+    width: 4%;
+}
+
+
+.container{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: 9%; /*30% body的高度*/
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    align-items: center;
+    width: 100%;
+}
+nav {
+    /* position: relative; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:  rgb(78, 112, 69);
+    height: 100%; /*20% container的高度*/
+    width: 100%;
+    z-index: 1;
+}
+.content {
+    /* position: relative; */
+    position: absolute;
+    top: 19%; /*20% body的高度*/
+    left: 8%;
+    width: 84%;
+    height: 100%; /*80% body的高度*/
+    z-index: 1;
+    text-align: center;
+    color: #050000;
+    background-color: rgba(255, 255, 255,0.7);
+    padding: 20px;
+    overflow: auto;/*让文字内容超出页面高度的时候出现滚动条*/
+}
+
+td{
+    line-height: 1.8;
+    padding: 0 70px;
+    text-align: left;
+    color: #050000;
+    font-size: 24px;
+    width: 600px;
+}
+
+
+video {
+    position: absolute;
+    top: 19%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav ul {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav ul li {
+    flex-basis: 25%;
+    /* flex-basis: auto; */
+    /* margin: 0 20px; */
+    margin: 0 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* border-radius: 5px; */
+}
+
+nav ul li ul {
+    position: absolute;
+    height: auto;
+    top: 100%;
+    left: auto;
+    width: 25%;
+    display: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.content h1 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.content p {
+    text-indent: 2em;
+    white-space: pre-wrap;
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.content img {
+    max-width: 100%;
+}
